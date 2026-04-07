@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: temperaturas-backend
-          image: YOUR_IMAGE_BACKEND
+          image: willyknox/temperaturas-frontend:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 5000
@@ -48,7 +48,7 @@ spec:
     spec:
       containers:
         - name: temperaturas-frontend
-          image: YOUR_IMAGE_FRONTEND
+          image: willyknox/temperaturas-frontend:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 3001
