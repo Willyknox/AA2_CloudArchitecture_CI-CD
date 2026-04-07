@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - 'examen-daw-01-main/frontend/**'
+      - 'frontend/**'
       - '.github/workflows/frontend-ci-cd.yml'
 
 jobs:
@@ -28,7 +28,7 @@ jobs:
       - name: Build and push frontend image
         uses: docker/build-push-action@v6
         with:
-          context: ./examen-daw-01-main/frontend
+          context: ./frontend
           push: true
           tags: |
             willyknox/temperaturas-frontend:latest
